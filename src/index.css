@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Quill Font/Size support (global) ===== */
+
+/* 명조 폰트(나눔명조) */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+
+/* ===============================
+   Quill font classes
+   =============================== */
+
+/* 고딕 */
+.ql-font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+}
+
+/* 명조 */
+.ql-font-myungjo {
+  font-family: "Nanum Myeongjo", "Batang", "바탕", serif;
+}
+
+/* ===============================
+   Quill size classes
+   =============================== */
+.ql-size-22 { font-size: 22px; }
+.ql-size-24 { font-size: 24px; }
+.ql-size-26 { font-size: 26px; }
+.ql-size-28 { font-size: 28px; }
+.ql-size-30 { font-size: 30px; }
+
+.ql-editor { font-size: 22px; }
+
+
+/* ===============================
+   Quill size dropdown (숫자 표시)
+   =============================== */
+.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: attr(data-value);
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label:not([data-value])::before {
+  content: "22";
+}
+
+/* ===============================
+   Quill font dropdown (한글 라벨)
+   =============================== */
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="sans"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="sans"]::before {
+  content: "고딕";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="myungjo"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="myungjo"]::before {
+  content: "명조";
+}
