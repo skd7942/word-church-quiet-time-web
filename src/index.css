@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,6 @@
 /* ===== Quill Font/Size support (global) ===== */
 
 /* 명조 폰트(나눔명조) */
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
 
 /* ===============================
    Quill font classes
